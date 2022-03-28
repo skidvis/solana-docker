@@ -23,3 +23,7 @@ Ports open:
 * Follow any prompts and then wait until it's done.
 * Type `exit` to leave the ssh session, then reconnect to begin playing with solana.
 * (if you want to stop the container, type `docker-compose down` once you have exited ssh)
+
+# Troubleshooting
+### I get `-bash: ./solana-install.sh: /bin/bash^M: bad interpreter: No such file or directory` when I try to run the solana-install.sh
+That's an issue with the line returns on the file.. just run this `sed -i -e 's/\r$//' solana-install.sh` to fix the file, and try again. 
