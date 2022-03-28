@@ -1,0 +1,13 @@
+version: "3"
+services:
+  solana:    
+    build: .
+    image: solana-setup
+    ports:
+      - "22:22"
+      - "8899:8899"
+      - "8900:8900"
+    volumes:
+      - solanadata:/home
+volumes:
+  solanadata:
