@@ -10,6 +10,7 @@ A docker container with
 Ports open:
 * 22 for ssh
 * 8899, 8900 for solana
+* 3000 for any web project you run in it
 
 
 # How to use
