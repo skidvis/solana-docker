@@ -20,7 +20,7 @@ Ports open:
 * Type `docker-compose build` and hit enter to start the build process.
 * Type `docker-compose up -d` to start running the container when it's done building.
 * Use ssh to log in to the container.. `ssh sshuser@127.0.0.1`, the password is `password`
-* Once in the container, type `./solana-install.sh` and enter `password` again when prompted.
+* Once in the container, type `sudo ./solana-install.sh` and enter `password` again when prompted.
 * Follow any prompts and then wait until it's done.
 * Type `exit` to leave the ssh session, then reconnect to begin playing with solana.
 * (if you want to stop the container, type `docker-compose down` once you have exited ssh)
