@@ -5,7 +5,7 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 
 # Install Solana
-sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+sh -c "$(curl -sSfL https://release.solana.com/v1.10.4/install)"
 export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
 
 # Install npm packages globally
