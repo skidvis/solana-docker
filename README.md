@@ -14,7 +14,7 @@ Ports open:
 
 
 # How to use
-* Make sure docker + docker-compose are on your machine. You can get them at docker.com
+* Make sure docker + docker-compose are on your machine. You can get them at [docker.com](https://docs.docker.com/get-docker/)
 * Download (and unzip) or clone this repo to your machine.
 * Open a terminal in the folder where the files are.
 * Type `docker-compose build` and hit enter to start the build process.
@@ -26,5 +26,6 @@ Ports open:
 * (if you want to stop the container, type `docker-compose down` once you have exited ssh)
 
 # Troubleshooting
-### I get `-bash: ./solana-install.sh: /bin/bash^M: bad interpreter: No such file or directory` when I try to run the solana-install.sh
-That's an issue with the line returns on the file.. just run this `sed -i -e 's/\r$//' solana-install.sh` to fix the file, and try again. 
+1) I get `-bash: ./solana-install.sh: /bin/bash: bad interpreter: No such file or directory` when I try to run the solana-install.sh
+<br>
+That's an issue with the line returns on the file. Just run this `sed -i -e 's/\r$//' solana-install.sh` to fix the file, and try again. 
